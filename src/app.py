@@ -3,17 +3,16 @@
 import concurrent
 import hashlib
 import pathlib
+import datetime as dt
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime
 from typing import Any, Self
 
 from loguru import logger
-from pytz import timezone
 
 from src.config import RevancedConfig
 from src.downloader.sources import apk_sources
 from src.exceptions import BuilderError, DownloadError, PatchingFailedError
-from src.utils import slugify, time_zone
+from src.utils import slugify
 
 
 class APP(object):
@@ -92,9 +91,8 @@ class APP(object):
         -------
             a string that represents the output file name for an APK file.
         """
-        current_date = datetime.now(timezone(time_zone))
-        formatted_date = current_date.strftime("%Y%b%d.%I%M%p").upper()
-        return f"Re{self.app_name}-Version{slugify(self.app_version)}-PatchVersion{slugify(self.resource["patches"]["version"])}-{formatted_date}-output.apk"  # noqa: E501
+        self.patch_date = dt.datetime.now().strftime("%y%m%d")
+        return f"{self.app_name}-revanced-v{slugify(self.app_version)}_{self.patch_date}.apk"
 
     def __str__(self: "APP") -> str:
         """Returns the str representation of the app."""

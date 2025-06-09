@@ -253,6 +253,6 @@ class Parser(object):
             msg = "Failed to send request for patching."
             raise PatchingFailedError(msg)
         for line in output:
-            logger.debug(line.decode(), flush=True, end="")
+            logger.debug(line.decode(encoding='cp949'), flush=True, end="")
         process.wait()
         logger.info(f"Patching completed for app {app} in {perf_counter() - start:.2f} seconds.")

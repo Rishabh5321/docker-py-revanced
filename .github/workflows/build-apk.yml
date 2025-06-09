@@ -117,20 +117,14 @@ jobs:
       - name: Get Date
         id: get-date
         run: |
-          echo "date=$(TZ='Asia/Kolkata' date +"%Y.%m.%d-%H.%M.%S")" >> $GITHUB_OUTPUT
-
-      - name: Delete Older Releases
-        uses: nikhilbadyal/ghaction-rm-releases@v0.0.5
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          RELEASE_PATTERN: "Build*"
+          echo "date=$(TZ='Asia/Seoul' date +"%Y-%m-%d")" >> $GITHUB_OUTPUT
 
       - name: Upload Build Artifact
         uses: ncipollo/release-action@main
         with:
-          artifacts: "apks/*-output.apk,updates.json,changelog.json,changelog.md"
+          artifacts: "apks/*revanced*.apk,updates.json,changelog.json,changelog.md"
           token: ${{ secrets.GITHUB_TOKEN }}
-          tag: Build-${{ steps.get-date.outputs.date }}
+          tag: Build_${{ steps.get-date.outputs.date }}
           artifactErrorsFailBuild: true
 
       - name: Sleep for 10 seconds

@@ -117,7 +117,7 @@ jobs:
       - name: Get Date
         id: get-date
         run: |
-          echo "date=$(TZ='Asia/Seoul' date +"%Y-%m-%d")" >> $GITHUB_OUTPUT
+          echo "date=$(TZ='Asia/Kolkata' date +"%Y-%m-%d")" >> $GITHUB_OUTPUT
 
       - name: Upload Build Artifact
         uses: ncipollo/release-action@main

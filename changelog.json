@@ -1,1 +1,38 @@
-{}
+{
+    "ReVanced/GmsCore": {
+        "ResourceName": "[ReVanced/GmsCore](https://github.com/ReVanced/GmsCore/releases/tag/v0.3.1.4.240913)",
+        "Version": "v0.3.1.4.240913",
+        "Changelog": "# Download\r\n\r\n| Default | Huawei |\r\n| -------- | -------- |\r\n| [Download](https://github.com/ReVanced/GmsCore/releases/download/v0.3.1.4.240913/app.revanced.android.gms-240913008-signed.apk) |  [Download](https://github.com/ReVanced/GmsCore/releases/download/v0.3.1.4.240913/app.revanced.android.gms-240913008-hw-signed.apk) |\r\n",
+        "PublishedOn": "2024-04-05T02:37:11Z"
+    },
+    "REAndroid/APKEditor": {
+        "ResourceName": "[REAndroid/APKEditor](https://github.com/REAndroid/APKEditor/releases/tag/V1.4.5)",
+        "Version": "V1.4.5",
+        "Changelog": "## What's Changed\r\n* Minor improvement on dex building performance\r\n* Fix dex container building issues\r\n* Fix smali parsing #198 \r\n* Update README @yonggamer in https://github.com/REAndroid/APKEditor/pull/203\r\n\r\n\r\n**Full Changelog**: https://github.com/REAndroid/APKEditor/compare/V1.4.4...V1.4.5",
+        "PublishedOn": "2025-08-13T20:00:41Z"
+    },
+    "inotia00/revanced-cli": {
+        "ResourceName": "[inotia00/revanced-cli](https://github.com/inotia00/revanced-cli/releases/tag/v5.0.1)",
+        "Version": "v5.0.1",
+        "Changelog": "- Based on ReVanced Cli [5.0.0](https://github.com/ReVanced/revanced-cli/tree/v5.0.0)\r\n- Added option command `options` (`options.json` file generator)\r\n- Added option command `patches` (`patches.json` file generator)\r\n- Added option command `--legacy-options` (set patch option via options.json file)\r\n- Added option command `--rip-libs` (remove native libs from apk)\r\n- Added option command `--unsigned` (disable signing of the final apk, regardless of whether it is mounted or not)\r\n- Added support anti-split (merged some [REAndroid/ARSCLib](https://github.com/REAndroid/ARSCLib) sources to implement anti-split)\r\n\r\n",
+        "PublishedOn": "2024-12-08T09:50:42Z"
+    },
+    "inotia00/revanced-patches": {
+        "ResourceName": "[inotia00/revanced-patches](https://github.com/inotia00/revanced-patches/releases/tag/v5.14.1-dev.5)",
+        "Version": "v5.14.1-dev.5",
+        "Changelog": "Shared\r\n==\r\n- fix(Disable forced auto audio tracks): Patch is missing from the patch list\r\n\r\n\r\nAnnouncement\r\n==\r\n- **This release is a hotfix for YouTube and YouTube Music.**\r\n- **For a full changelog, see the [previous release notes](https://github.com/inotia00/revanced-patches/releases/tag/v5.14.1-dev.4).**\r\n- Compatible ReVanced Manager: [RVX Manager v1.25.5 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.25.5).\r\n\r\n\r\nContribute to translation\r\n==\r\n- [YouTube](https://crowdin.com/project/revancedextended)\r\n- [YT Music](https://crowdin.com/project/revancedmusicextended)",
+        "PublishedOn": "2025-12-13T12:19:30Z"
+    },
+    "revanced/revanced-patches": {
+        "ResourceName": "[revanced/revanced-patches](https://github.com/ReVanced/revanced-patches/releases/tag/v5.47.0-dev.14)",
+        "Version": "v5.47.0-dev.14",
+        "Changelog": "# [5.47.0-dev.14](https://github.com/ReVanced/revanced-patches/compare/v5.47.0-dev.13...v5.47.0-dev.14) (2025-12-13)\n\n\n### Bug Fixes\n\n* **Spotify:** Make patches work with latest versions again ([#6359](https://github.com/ReVanced/revanced-patches/issues/6359)) ([34830ba](https://github.com/ReVanced/revanced-patches/commit/34830ba63b436146064f0f89f948d51cd0cb9146))\n\n\n\n",
+        "PublishedOn": "2025-12-13T08:53:15Z"
+    },
+    "ReVanced/revanced-patches": {
+        "ResourceName": "[ReVanced/revanced-patches](https://github.com/ReVanced/revanced-patches/releases/tag/v5.47.0-dev.14)",
+        "Version": "v5.47.0-dev.14",
+        "Changelog": "# [5.47.0-dev.14](https://github.com/ReVanced/revanced-patches/compare/v5.47.0-dev.13...v5.47.0-dev.14) (2025-12-13)\n\n\n### Bug Fixes\n\n* **Spotify:** Make patches work with latest versions again ([#6359](https://github.com/ReVanced/revanced-patches/issues/6359)) ([34830ba](https://github.com/ReVanced/revanced-patches/commit/34830ba63b436146064f0f89f948d51cd0cb9146))\n\n\n\n",
+        "PublishedOn": "2025-12-13T08:53:15Z"
+    }
+}
